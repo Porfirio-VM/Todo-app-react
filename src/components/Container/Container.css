@@ -1,0 +1,78 @@
+.todo-container{
+    padding: .6rem;
+    display: flex;
+    width: 100%;
+}
+.task{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+.task:hover .cross img{
+    display: flex;
+}
+
+.circle{
+    cursor: pointer;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--light-grayish-blue-l);
+    background-color: inherit;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle:hover{
+    background: var(--check-Background);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cross img{
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+    cursor: pointer;
+}
+.custom-checkbox{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.custom-checkbox input[type="checkbox"] {
+    display: none; /* Oculta el input original */
+}
+.checkmark {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--light-grayish-blue-l);
+    background-color: inherit;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkmark:hover{
+   border-color: hsl(280, 87%, 65%);
+}
+.checkmark img,
+.circle img{
+    display: none;
+}
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-image: url(../../images/icon-check.svg);
+    background: var(--check-Background);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ 
+.custom-checkbox input[type="checkbox"]:checked + .checkmark img,
+.circle:hover  img{
+    display: block;
+}

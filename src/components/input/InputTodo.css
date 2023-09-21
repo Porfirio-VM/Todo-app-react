@@ -1,0 +1,15 @@
+.form-todo{
+    width: 100%;
+}
+.input-todo{
+    color: inherit;
+    width: inherit;
+    height: 100%;
+    border: none;
+    background-color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+.input-todo:focus{
+    outline: none;
+}

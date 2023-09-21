@@ -1,0 +1,57 @@
+#root{
+    margin-top: 4rem;
+    width: 500px;
+    margin-inline: 2rem;
+}
+.todo-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: var(--very-light-gray-l);
+}
+.todo-footer{
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+}
+.switch{
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.component-border{
+    border-radius: 8px;
+    overflow: hidden;
+}
+.component-border:last-child{
+    margin-top: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.todo-filter{
+    display: flex;
+    gap: 1rem;
+}
+.button-foot{
+    font-weight: 400;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 780px){
+    .todo-filter{
+        gap: 2rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        position: absolute;
+        background: inherit;
+        bottom: -120%;
+        left: 0;
+        width: 100%;
+        padding: inherit;
+    }
+}
